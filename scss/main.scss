@@ -3,11 +3,10 @@
 @import "1-core/placeholders";
 @import "1-core/variables";
 
-@import "2-vendors/bootstrap";
-@import "2-vendors/jquery-ui";
+@import "2-vendors/sanitize";
 
 @import "3-base/base";
-@import "3-base/reset";
+@import "3-base/helpers";
 @import "3-base/typography";
 
 @import "4-layout/navigation";

@@ -1,0 +1,22 @@
+{
+  "name": "scss-template-basic",
+  "version": "1.0.0",
+  "description": "Basic SASS 7+1 Template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/programmandi/scss-template-basic.git"
+  },
+  "author": "spadino (spada.andrea@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/programmandi/scss-template-basic/issues"
+  },
+  "homepage": "https://github.com/programmandi/scss-template-basic#readme",
+  "devDependencies": {
+    "sanitize.scss": "^1.0.0"
+  }
+}

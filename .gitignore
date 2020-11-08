@@ -1,1 +1,4 @@
 *.html
+node_modules
+.ws.code-workspace
+yarn.lock
