@@ -1,0 +1,38 @@
+/*! Grid Classes */
+
+.#{$grid-class-name} {
+  list-style: none;   
+  @if $debug-grids {
+    background: aliceblue;
+  } 
+}
+
+.#{$column-class-name} {
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: -.25em;
+  min-height: 1px;  
+  vertical-align: top;
+  @if $debug-grids {
+    background: pink;
+    border: rgb(179, 116, 126);
+    border-width: 1px;
+    border-style: solid
+    ;
+  }
+}
+
+/**
+ *  Construct a grid for each group, with ratio divisions 
+*/
+
+// For each of our column groups...
+@each $columns-group in $columns-groups {
+  
+  // ...create a ratio class.
+  @for $i from 1 through $columns-group {
+    .#{$ratio-class-name}-#{$i}-by-#{$columns-group} {
+      width: percentage($i/$columns-group);
+    }
+  }
+}

@@ -271,7 +271,7 @@ html {
  * 3. Leave some space on the edges, especially valuable on small screens
  */
 .container {
-  max-width: 960px;
+  max-width: 1920px;
   /* 1 */
   margin-left: auto;
   /* 2 */
@@ -310,3 +310,115 @@ html {
   padding: 0;
   position: absolute;
   width: 1px; }
+
+/*! Grid Classes */
+.grid {
+  list-style: none;
+  background: aliceblue; }
+
+.col {
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: -.25em;
+  min-height: 1px;
+  vertical-align: top;
+  background: pink;
+  border: #b3747e;
+  border-width: 1px;
+  border-style: solid; }
+
+/**
+ *  Construct a grid for each group, with ratio divisions 
+*/
+.ratio-1-by-2 {
+  width: 50%; }
+
+.ratio-2-by-2 {
+  width: 100%; }
+
+.ratio-1-by-3 {
+  width: 33.33333%; }
+
+.ratio-2-by-3 {
+  width: 66.66667%; }
+
+.ratio-3-by-3 {
+  width: 100%; }
+
+.ratio-1-by-5 {
+  width: 20%; }
+
+.ratio-2-by-5 {
+  width: 40%; }
+
+.ratio-3-by-5 {
+  width: 60%; }
+
+.ratio-4-by-5 {
+  width: 80%; }
+
+.ratio-5-by-5 {
+  width: 100%; }
+
+.ratio-1-by-8 {
+  width: 12.5%; }
+
+.ratio-2-by-8 {
+  width: 25%; }
+
+.ratio-3-by-8 {
+  width: 37.5%; }
+
+.ratio-4-by-8 {
+  width: 50%; }
+
+.ratio-5-by-8 {
+  width: 62.5%; }
+
+.ratio-6-by-8 {
+  width: 75%; }
+
+.ratio-7-by-8 {
+  width: 87.5%; }
+
+.ratio-8-by-8 {
+  width: 100%; }
+
+.ratio-1-by-13 {
+  width: 7.69231%; }
+
+.ratio-2-by-13 {
+  width: 15.38462%; }
+
+.ratio-3-by-13 {
+  width: 23.07692%; }
+
+.ratio-4-by-13 {
+  width: 30.76923%; }
+
+.ratio-5-by-13 {
+  width: 38.46154%; }
+
+.ratio-6-by-13 {
+  width: 46.15385%; }
+
+.ratio-7-by-13 {
+  width: 53.84615%; }
+
+.ratio-8-by-13 {
+  width: 61.53846%; }
+
+.ratio-9-by-13 {
+  width: 69.23077%; }
+
+.ratio-10-by-13 {
+  width: 76.92308%; }
+
+.ratio-11-by-13 {
+  width: 84.61538%; }
+
+.ratio-12-by-13 {
+  width: 92.30769%; }
+
+.ratio-13-by-13 {
+  width: 100%; }

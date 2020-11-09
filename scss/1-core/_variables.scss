@@ -1,1 +1,14 @@
-$max-width: 960px;
+$max-width: 1920px;
+
+// Grid Breakpoints
+$grid-breakpoints-small: 480px !default;
+$grid-breakpoints-medium: 700px !default;
+$grid-gutter-width: 20px !default;
+
+// Define the classes names
+$grid-class-name: "grid" !default;
+$column-class-name: "col" !default;
+$ratio-class-name: "ratio" !default;
+
+$columns-groups: (2, 3, 5, 8, 13) !default;
+
