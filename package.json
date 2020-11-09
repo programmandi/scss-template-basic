@@ -4,7 +4,9 @@
   "description": "Basic SASS 7+1 Template",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node-sass --include-path scss scss/main.scss build/css/main.css",
+    "build:watch": "npm run build -- -w & live-server build"
   },
   "repository": {
     "type": "git",
