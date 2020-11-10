@@ -1,3 +1,9 @@
+/**
+ *  Variables
+ */
+/** 
+ * Grids
+ */
 /*! sanitize.css v4.1.0 | CC0 License | github.com/jonathantneal/sanitize.css */
 article,
 aside,
@@ -239,22 +245,23 @@ textarea,
   [hidden][aria-hidden='false']:focus {
     clip: auto; }
 
-/**
- * Set up a decent box model on the root element
+/** 
+ * Base 
  */
 html {
   box-sizing: border-box; }
 
-/**
- * Make all elements from the DOM inherit from the parent box-sizing
- * Since `*` has a specificity of 0, it does not override the `html` value
- * making all elements inheriting from the root box-sizing value
- * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
- */
 *,
 *::before,
 *::after {
   box-sizing: inherit; }
+
+.nameof-container {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px; }
 
 /**
  * Clear inner floats
@@ -263,26 +270,6 @@ html {
   clear: both;
   content: '';
   display: table; }
-
-/**
- * Main content containers
- * 1. Make the container full-width with a maximum width
- * 2. Center it in the viewport
- * 3. Leave some space on the edges, especially valuable on small screens
- */
-.container {
-  max-width: 1920px;
-  /* 1 */
-  margin-left: auto;
-  /* 2 */
-  margin-right: auto;
-  /* 2 */
-  padding-left: 20px;
-  /* 3 */
-  padding-right: 20px;
-  /* 3 */
-  width: 100%;
-  /* 1 */ }
 
 /**
  * Hide text while making it readable for screen readers
@@ -314,18 +301,34 @@ html {
 /*! Grid Classes */
 .grid {
   list-style: none;
-  background: aliceblue; }
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background: #dcf0ff;
+  border: #496686;
+  border-width: 1px;
+  border-style: solid; }
 
 .col {
   box-sizing: border-box;
   display: inline-block;
-  margin-right: -.25em;
   min-height: 1px;
   vertical-align: top;
   background: pink;
   border: #b3747e;
   border-width: 1px;
   border-style: solid; }
+
+/* Flex box */
+.flex {
+  display: flex;
+  background-color: #f0ffdc; }
+  .flex .col {
+    flex: 1;
+    background: lightgreen;
+    border: #74b384;
+    border-width: 1px;
+    border-style: solid; }
 
 /**
  *  Construct a grid for each group, with ratio divisions 

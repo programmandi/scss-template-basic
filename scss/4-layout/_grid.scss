@@ -1,18 +1,25 @@
 /*! Grid Classes */
 
-.#{$grid-class-name} {
+.#{$nameof-grid} {
   list-style: none;   
+  display: flex;
+  flex-wrap: wrap;    
+  width: 100%;  
+
   @if $debug-grids {
-    background: aliceblue;
-  } 
+    background: rgb(220, 240, 255);
+    border: rgb(73, 102, 134);
+    border-width: 1px;
+    border-style: solid
+  }     
 }
 
-.#{$column-class-name} {
+.#{$nameof-column} {
   box-sizing: border-box;
-  display: inline-block;
-  margin-right: -.25em;
+  display: inline-block;  
   min-height: 1px;  
   vertical-align: top;
+
   @if $debug-grids {
     background: pink;
     border: rgb(179, 116, 126);
@@ -21,6 +28,28 @@
     ;
   }
 }
+
+/* Flex box */
+.#{$nameof-flexbox} {
+  display: flex;  
+
+  @if $debug-grids {
+    background-color: rgb(240, 255, 220);
+  }
+
+  & .#{$nameof-column} {
+    flex: 1;    
+
+    @if $debug-grids {
+      background: lightgreen;
+      border: rgb(116, 179, 132);
+      border-width: 1px;
+      border-style: solid
+      ;
+    }
+  }
+}
+
 
 /**
  *  Construct a grid for each group, with ratio divisions 
@@ -31,7 +60,7 @@
   
   // ...create a ratio class.
   @for $i from 1 through $columns-group {
-    .#{$ratio-class-name}-#{$i}-by-#{$columns-group} {
+    .#{$nameof-ratio}-#{$i}-by-#{$columns-group} {
       width: percentage($i/$columns-group);
     }
   }

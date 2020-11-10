@@ -1,14 +1,24 @@
+/**
+ *  Variables
+ */
+
 $max-width: 1920px;
+$page-margin: 20px;
+
+/** 
+ * Grids
+ */
 
 // Grid Breakpoints
-$grid-breakpoints-small: 480px !default;
-$grid-breakpoints-medium: 700px !default;
 $grid-gutter-width: 20px !default;
 
 // Define the classes names
-$grid-class-name: "grid" !default;
-$column-class-name: "col" !default;
-$ratio-class-name: "ratio" !default;
+$nameof-container: "container" !default;
+$nameof-row: "row" !default;
+$nameof-grid: "grid" !default;
+$nameof-column: "col" !default;
+$nameof-ratio: "ratio" !default;
+$nameof-flexbox: "flex" !default;
 
 $columns-groups: (2, 3, 5, 8, 13) !default;
 
